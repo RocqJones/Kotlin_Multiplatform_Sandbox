@@ -2,10 +2,14 @@ import SwiftUI
 import shared
 
 struct ContentView: View {
-	let greet = Greeting().greet()
+    // let in Swift is similar to Kotlin's val
+	let phrases = Greeting().greet()
 
 	var body: some View {
-		Text(greet)
+        // The List function produces a list of Text items.
+        List(phrases, id: \.self) {
+            Text($0)
+        }
 	}
 }
 
