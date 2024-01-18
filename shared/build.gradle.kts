@@ -2,6 +2,9 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
     kotlin("plugin.serialization") version "1.9.21"
+
+    // SKIE libraries to help you work with flows in iOS
+    id("co.touchlab.skie") version "0.5.6"
 }
 
 kotlin {
